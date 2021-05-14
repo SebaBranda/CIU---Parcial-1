@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ministerio de Salud de la Ciudad Autónoma de Buenos Aires</title>
+    <link rel="stylesheet" href="login.css" type="text/css">
+</head>
+
+<body class="fondo">
+    <img src="minsal.jpg" class="minsal">
+    <div class="centro">
+        <input class="redondeado" type="text" placeholder="Usuario" id="usuario" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+        <br>
+        <br>
+        <input class="redondeado" type="password" placeholder="Contrasena" id="contrasena">
+        <br>
+        <br>
+        <button type="submit" id="ingresar">Ingresar</button><br>
+    </div>
+    <img src="logo.jpg" class="logo">
+    <script type="text/javascript">
+        var usuario = document.getElementById("usuario");
+        var contrasena = document.getElementById("contrasena");
+        var ingresar = document.getElementById("ingresar");
+
+
+
+        ingresar.addEventListener("click", function(event) {
+            if (contrasena.value.length < 4) {
+                alert("La contrasena tiene que tener al menos 4 caracteres");
+            } else
+                window.location.href = './paginaPrincipal.html'
+        });
+    </script>
+</body>
+
+</html>

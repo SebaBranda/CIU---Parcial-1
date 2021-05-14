@@ -1,0 +1,22 @@
+.fondo {
+    background-color: #E9C46A;
+    color: rgb(0, 0, 0);
+}
+
+.centro {
+    position: absolute;
+    top: 50vh;
+    left: 100vh;
+}
+
+.minsal {
+    position: absolute;
+    top: 40vh;
+    left: 30vh;
+}
+
+.logo {
+    position: absolute;
+    top: 0vh;
+    left: 0vh;
+}

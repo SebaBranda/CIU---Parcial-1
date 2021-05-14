@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pagina Principal</title>
+    <link rel="stylesheet" href="pprincipal.css" type="text/css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="imgBx">
+                <img src="./img1.jpg">
+            </div>
+            <div class="content">
+                <h2>Farmacia Tito</h2>
+                <h3>15%</h3>
+                <p>Descuentos increíbles en perfumeria y vacunas!!</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="./img2.jpg">
+            </div>
+            <div class="content">
+                <h2>Farmaciacity</h2>
+                <h3>15%</h3>
+                <p>Descuentos increíbles en perfumeria y golosinas!!</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="./img3.jpg">
+            </div>
+            <div class="content">
+                <h2>Farmacias Dr. Ahorro</h2>
+                <h3>15%</h3>
+                <p>Descuentos increíbles en vacunas y genericos!!</p>
+            </div>
+        </div>
+    </div>
+    <button class="boton" id="salir">Cerrar sesion</button>
+
+    <script type="text/javascript">
+        var cerrarSesion = document.getElementById("salir");
+
+        cerrarSesion.addEventListener("click", function() {
+            window.location.href = './index.html'
+        });
+    </script>
+</body>
+
+</html>
